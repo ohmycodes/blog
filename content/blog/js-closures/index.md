@@ -4,7 +4,7 @@ date: '2019-01-30T23:00:00.000Z'
 tags: ['javascript', 'functional', 'programming']
 ---
 
-First time I knew about the concept of `Closure` was using _Groovy_ and later when I started learning _Javascript_ I met it again and they look like the same but not at all.
+First time I knew about the concept of **Closure** was using _Groovy_ and later when I started learning _Javascript_ I met it again and they look like the same but not at all.
 In _Javascript_ a _Closure_ is a special kind of [High Order Function](https://www.ohmycode.cl/js-high-order-function/) where a function returns another function that can be assigned to a label and then called. Then the function can _remember_ the variables around it even when that function is called from another place.
 
 Remember that functions in javascript are first class objects and they can be:
