@@ -1,7 +1,7 @@
 ---
 title: JS Scopes
 date: '2019-02-04T23:00:00.000Z'
-tags: ['javascript', 'functional', 'programming']
+tags: ['javascript', 'functional', 'programming', 'fundamentals']
 ---
 
 **Scope** means where should I search for _things_ and it is a set of rules that allows order things and thanks to this find them in this way search them efficiently.
@@ -34,20 +34,20 @@ function saludo(greeting) {
 
 2. Code execution can be interpreted as a conversation between the _Javascript Virtual Machine_ and the _Global Scope Manager_ (here I need to thank [Kyle Simpson](https://twitter.com/getify) because he explains this in a way that you can understand, you should read his books _You Don't Know JS_)
 
-  - `var greeting = "hello"`
-    - JSVM: "hey global scope manager I have a target reference to a variable named _greeting_ do you have one?"
-    - GSM: "yes, I do"
-    - JSVM: "thanks" so now is time to assign _"hello"_ to variable _greeting_
-  - `var greeting = "hi"` inside _salute() {..}_
-    - JSVM: "hey scope of _salute_ I have a (target) reference to _greeting_ Do you heard of it?"
-    - SOS: "yes, I do"
-    - JSVM: "thank you scope of _salute_" so now it is time to assign _"hi"_ to _greeting_
-  - `salutation = "hey"` inside _saludo(greeting) {..}_
-    - JSVM: "hey scope of _saludo_ I have a (target) reference for _salutation_ Do you know him?"
-    - SOS: "No, I don't"
-    - JSVM: "Ok no problem... hey global scope manager I have a (target) reference for _salutation_ Do you know him?"
-    - GSM: "No, I don't. But don't worry I can create one in execution time"
-    - JSVM: "Oh thank you I owe you a beer" so now it is time to assign _"hey"_ to variable _salutation_ in global (_implicit creation_)
+- `var greeting = "hello"`
+  - JSVM: "hey global scope manager I have a target reference to a variable named _greeting_ do you have one?"
+  - GSM: "yes, I do"
+  - JSVM: "thanks" so now is time to assign _"hello"_ to variable _greeting_
+- `var greeting = "hi"` inside _salute() {..}_
+  - JSVM: "hey scope of _salute_ I have a (target) reference to _greeting_ Do you heard of it?"
+  - SOS: "yes, I do"
+  - JSVM: "thank you scope of _salute_" so now it is time to assign _"hi"_ to _greeting_
+- `salutation = "hey"` inside _saludo(greeting) {..}_
+  - JSVM: "hey scope of _saludo_ I have a (target) reference for _salutation_ Do you know him?"
+  - SOS: "No, I don't"
+  - JSVM: "Ok no problem... hey global scope manager I have a (target) reference for _salutation_ Do you know him?"
+  - GSM: "No, I don't. But don't worry I can create one in execution time"
+  - JSVM: "Oh thank you I owe you a beer" so now it is time to assign _"hey"_ to variable _salutation_ in global (_implicit creation_)
 
 > Even though javascript allows implicit creation in global scope as programmers we should avoid this bad practice. So we can add _"use strict"_ mode to our code.
 

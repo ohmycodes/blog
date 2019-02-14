@@ -1,7 +1,7 @@
 ---
 title: JS Hoisting
 date: '2019-02-11T23:00:00.000Z'
-tags: ['javascript', 'functional', 'programming']
+tags: ['javascript', 'functional', 'programming', 'fundamentals']
 ---
 
 If you looked at [JS Scopes](https://www.ohmycode.cl/js-scopes/) post

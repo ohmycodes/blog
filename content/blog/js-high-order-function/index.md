@@ -1,7 +1,7 @@
 ---
 title: High Order Function
 date: '2019-01-29T23:00:00.000Z'
-tags: ['javascript', 'functional', 'programming']
+tags: ['javascript', 'functional', 'programming', 'fundamentals']
 ---
 
 A HOF is a function that can take another function as an argument (i.e. a _callback_) or that can return a function.

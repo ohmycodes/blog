@@ -1,7 +1,7 @@
 ---
 title: Closures
 date: '2019-01-30T23:00:00.000Z'
-tags: ['javascript', 'functional', 'programming']
+tags: ['javascript', 'functional', 'programming', 'fundamentals']
 ---
 
 First time I knew about the concept of **Closure** was using _Groovy_ and later when I started learning _Javascript_ I met it again and they look like the same but not at all.
